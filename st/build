@@ -1,0 +1,12 @@
+#!/bin/sh -e
+
+patch -p1 < st-dracula-0.8.2.diff
+
+sed -i 's|Iosevka|Monospace|g' config.def.h
+
+# Install terminfo to right location.
+export TERMINFO=$1/usr/share/terminfo
+mkdir -p "$TERMINFO"
+
+make
+make PREFIX=/usr DESTDIR="$1" install
