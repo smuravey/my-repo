@@ -1,8 +1,9 @@
 #!/bin/sh -e
 
 patch -p1 < st-dracula-0.8.2.diff
+patch -p1 < st-delkey-20201112-4ef0cbd.diff
 
-sed -i 's|Iosevka|Monospace|g' config.def.h
+#sed -i 's|Iosevka|Monospace|g' config.def.h
 
 # Install terminfo to right location.
 export TERMINFO=$1/usr/share/terminfo
