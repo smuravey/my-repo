@@ -4,6 +4,4 @@ patch -p1 < kernel-no-perl.patch
 
 make -j "$(nproc)"
 
-rm "$1/boot/vmlinuz"
-
-install -Dm644 "arch/x86/boot/bzImage" "$1/boot/vmlinuz"
+install -Dm644 "arch/x86/boot/bzImage" "$1/boot/vmlinuz-$2"
