@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Iosevka:pixelsize=14:antialias=true:autohint=true";
-static int borderpx = 20;
+static char *font = "Iosevka:pixelsize=16:antialias=true:autohint=true";
+static int borderpx = 25;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -150,8 +150,8 @@ static unsigned int cursorshape = 4;
  * Default columns and rows numbers
  */
 
-static unsigned int cols = 150;
-static unsigned int rows = 33;
+static unsigned int cols = 140;
+static unsigned int rows = 30;
 
 /*
  * Default colour and shape of the mouse cursor
