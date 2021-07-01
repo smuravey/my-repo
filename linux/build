@@ -5,3 +5,9 @@ patch -p1 < kernel-no-perl.patch
 make -j "$(nproc)"
 
 install -Dm644 "arch/x86/boot/bzImage" "$1/boot/vmlinuz-$2"
+
+#mkdir -p $1/boot/grub
+
+sed -i "s/0.0.0/$2/" grub.cfg
+
+install -Dm644 grub.cfg "$1/boot/grub/grub.cfg"
