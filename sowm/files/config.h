@@ -3,16 +3,16 @@
 
 #define MOD Mod4Mask
 
-const char* term[]	= {"st",             			0};
-const char* firefox[]	= {"firefox",        			0};
-const char* nnn[]	= {"st", "-e", "nnn",			0};
-const char* rootnnn[]	= {"st", "-e", "doas", "nnn",		0};
-const char* cmus[]	= {"st", "-e", "cmus",			0};
-const char* scrot[]	= {"scrot",          			0};
+const char* term[]		= 	{"st",             			0};
+const char* firefox[]	=	{"firefox",        			0};
+const char* nnn[]		=	{"st", "-e", "nnn",			0};
+const char* rootnnn[]	=	{"st", "-e", "ssu", "nnn",	0};
+const char* cmus[]		=	{"st", "-e", "cmus",		0};
+const char* scrot[]		=	{"scrot",          			0};
 
-const char* voldown[] = {"amixer", "sset", "PCM", "2db-",        0};
-const char* volup[]   = {"amixer", "sset", "PCM", "2db+",        0};
-const char* volmute[] = {"amixer", "sset", "PCM", "toggle",      0};
+const char* voldown[] = {"amixer", "sset", "PCM", "2db-",	0};
+const char* volup[]   = {"amixer", "sset", "PCM", "2db+",	0};
+const char* volmute[] = {"amixer", "sset", "PCM", "toggle",	0};
 
 static struct key keys[] = {
     {MOD,      XK_q,   win_kill,   {0}},

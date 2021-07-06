@@ -3,8 +3,7 @@
 patch -p1 < st-dracula-0.8.2.diff
 patch -p1 < st-delkey-20201112-4ef0cbd.diff
 
-# Install terminfo to right location.
-export TERMINFO=$1/usr/share/terminfo
+export TERMINFO="$1/usr/share/terminfo"
 mkdir -p "$TERMINFO"
 
 make
