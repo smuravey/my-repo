@@ -1,4 +1,5 @@
 #!/bin/sh -e
 
 mkdir -p "$1/usr/share/fonts/iosevka-fonts"
+unzip *iosevka*
 cp ./*.ttf "$1/usr/share/fonts/iosevka-fonts"

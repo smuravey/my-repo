@@ -1,2 +1,4 @@
+pkgconf
+gnutls
 readline
 zlib
