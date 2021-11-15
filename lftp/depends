@@ -1,4 +1,4 @@
-pkgconf
+pkgconf make
 gnutls
 readline
 zlib

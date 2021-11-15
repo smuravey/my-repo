@@ -1,0 +1,11 @@
+#!/bin/sh -e
+
+./configure \
+    --prefix=/usr \
+    --with-audio=alsa \
+    --with-optimization=3 \
+    --disable-equalizer \
+    --disable-ipv6
+
+make
+make install
